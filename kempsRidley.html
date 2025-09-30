@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kemp's Ridley Sea Turtle: Endangered Giant of the Gulf</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'ocean': '#0077b6',
+                        'sea-green': '#00b4d8',
+                        'sand': '#ffcdb2',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Set default font and background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f9ff; /* Light sky blue background */
+        }
+        /* Style for the slide containers */
+        .slide-section {
+            padding: 4rem 1rem;
+            margin: 2rem auto;
+            max-width: 1000px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 1.5rem;
+            transition: transform 0.3s ease-in-out;
+            scroll-margin-top: 6rem; /* Offset for fixed header */
+        }
+        /* Custom list styling */
+        .slide-list li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .slide-list li::before {
+            content: "•";
+            color: #0077b6; /* Ocean blue bullet */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1.5em;
+        }
+
+        /* Styles for the Navigation Menu Dropdown */
+        .nav-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s;
+            text-align: left;
+        }
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Title -->
+    <header class="bg-ocean text-white p-6 text-center shadow-lg sticky top-0 z-20 rounded-b-xl">
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Kemp's Ridley Sea Turtle</h1>
+        <p class="mt-2 text-xl md:text-2xl font-light">Endangered Giant of the Gulf</p>
+
+        <!-- Quick Navigation Dropdown -->
+        <div class="absolute top-4 right-4 md:top-6 md:right-6">
+            <button id="navToggle" class="bg-sea-green hover:bg-white hover:text-ocean transition text-white font-semibold py-2 px-4 rounded-lg shadow-xl focus:outline-none focus:ring-4 focus:ring-sea-green focus:ring-opacity-50">
+                Quick Nav
+            </button>
+            <div id="navMenu" class="hidden absolute right-0 mt-2 w-48 bg-ocean/90 rounded-lg shadow-2xl p-2 transition transform origin-top-right backdrop-blur-sm">
+                <a href="#slide-1" class="nav-link">1. Overview</a>
+                <a href="#slide-2" class="nav-link">2. Location & Habitat</a>
+                <a href="#slide-3" class="nav-link">3. Nesting Habits</a>
+                <a href="#slide-4" class="nav-link">4. Locomotion & Tracks</a>
+                <a href="#slide-5" class="nav-link">5. Key Takeaway</a>
+                <a href="#slide-6" class="nav-link font-bold">6. Sources</a>
+            </div>
+        </div>
+        <!-- End Quick Navigation -->
+    </header>
+
+    <main class="container mx-auto p-4">
+
+        <!-- Slide 1: Species Overview -->
+        <section id="slide-1" class="slide-section bg-white">
+            <h2 class="text-3xl font-bold mb-6 text-sea-green border-b-2 border-sea-green pb-2">Slide 1: Species Overview (The Smallest Sea Turtle)</h2>
+
+            <div class="md:flex md:space-x-8">
+                <div class="md:w-1/2">
+                    <ul class="slide-list text-lg">
+                        <li><b>Scientific Name:</b> <span class="font-mono italic">*Lepidochelys kempii*</span></li>
+                        <li><b>Conservation Status:</b> <span class="font-bold text-red-600">Critically Endangered</span></li>
+                        <li><b>Size:</b> The smallest sea turtle species, typically measuring $60 - 70$ cm ($24 - 28$ inches) and weighing about $35 - 45$ kg ($75 - 100$ lbs).</li>
+                        <li><b>Distinguishing Feature:</b> Dark gray or olive-green carapace (shell) with a creamy white or yellowish plastron (bottom shell). Its powerful jaws are adapted for crushing hard-shelled prey.</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <p class="text-sm text-center text-gray-500 mb-2">Visual: Adult Kemp's Ridley Swimming </p>
+                    <img src="https://placehold.co/600x400/1e88e5/ffffff?text=Kemp's+Ridley+Sea+Turtle"
+                         alt="Placeholder image of a Kemp's Ridley Sea Turtle swimming underwater."
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/ffffff?text=Image+Not+Found'"
+                         class="w-full h-auto object-cover rounded-lg shadow-md transition duration-300 hover:scale-[1.02]">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: Location and Habitat -->
+        <section id="slide-2" class="slide-section bg-white">
+            <h2 class="text-3xl font-bold mb-6 text-ocean border-b-2 border-ocean pb-2">Slide 2: Location and Habitat</h2>
+            <ul class="slide-list text-lg">
+                <li><b>Primary Range:</b> The entire Gulf of Mexico is the main foraging and breeding ground for adults.</li>
+                <li><b>Juvenile Range:</b> Young turtles travel widely along the U.S. Atlantic coast, found from Florida all the way up to New England and occasionally Nova Scotia.</li>
+                <li><b>Preferred Habitat (Adults):</b>
+                    <ul class="ml-6 mt-2 list-disc list-inside space-y-1 text-base text-gray-700">
+                        <li><b>Shallow Waters:</b> They are "neritic" species, staying in coastal, shallow waters (rarely venturing deeper than $50$ meters).</li>
+                        <li><b>Bottom Type:</b> They prefer muddy or sandy bottoms, often near estuaries and shallow seagrass beds.</li>
+                    </ul>
+                </li>
+                <li><b>Diet:</b> They are carnivorous benthic (sea floor) feeders, primarily eating <span class="font-semibold">crabs</span>, but also mollusks, shrimp, and occasional fish or jellyfish.</li>
+            </ul>
+        </section>
+
+        <!-- Slide 3: Unique Nesting Habits (The Arribada) -->
+        <section id="slide-3" class="slide-section bg-white">
+            <h2 class="text-3xl font-bold mb-6 text-sea-green border-b-2 border-sea-green pb-2">Slide 3: Unique Nesting Habits (The Arribada)</h2>
+            <ul class="slide-list text-lg">
+                <li><b>Primary Nesting Site:</b> Almost 95% of worldwide nesting occurs on a single stretch of beach in Tamaulipas, Mexico, particularly at Rancho Nuevo.</li>
+                <li><b>Timing:</b> Nesting occurs between April and July. Females typically nest 2 to 3 times per season.</li>
+                <li><b>Diurnal Nesting:</b> They are one of the only sea turtle species that nests primarily during <span class="font-extrabold text-blue-800">daylight hours</span>.</li>
+                <li><b>The "Arribada" (Arrival):</b> They are famous for their synchronized mass nesting events, called *arribadas* (Spanish for "arrival"). Hundreds or even thousands of females emerge from the sea together.</li>
+                <li><b>Clutch:</b> Each nest (clutch) contains approximately $100 - 110$ eggs, which incubate for about $50 - 60$ days.</li>
+            </ul>
+        </section>
+
+        <!-- Slide 4: Locomotion and Tracks -->
+        <section id="slide-4" class="slide-section bg-white">
+            <h2 class="text-3xl font-bold mb-6 text-ocean border-b-2 border-ocean pb-2">Slide 4: Locomotion and Tracks</h2>
+
+            <div class="md:flex md:space-x-8 flex-row-reverse">
+                <div class="md:w-1/2">
+                    <p class="text-sm text-center text-gray-600 mb-2">Visual: Tracks in the Sand (Crawl Marks) </p>
+                    <img src="https://placehold.co/600x200/4CAF50/ffffff?text=Alternating+Sea+Turtle+Tracks"
+                         alt="Placeholder image of alternating sea turtle tracks in the sand."
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x200/333333/ffffff?text=Image+Not+Found'"
+                         class="w-full h-auto object-cover rounded-lg shadow-md transition duration-300 hover:scale-[1.02]">
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <ul class="slide-list text-lg">
+                        <li><b>Ocean Locomotion:</b> They use their front flippers for powerful propulsion and their smaller rear flippers for steering.</li>
+                        <li><b>Beach Locomotion (Crawl Pattern):</b>
+                            <ul class="ml-6 mt-2 list-disc list-inside space-y-1 text-base text-gray-700">
+                                <li>Kemp’s Ridleys use an <b>alternating crawl</b> motion (one front flipper and the opposite rear flipper move together).</li>
+                            </ul>
+                        </li>
+                        <li><b>Tracks (Crawl Marks):</b>
+                            <ul class="ml-6 mt-2 list-disc list-inside space-y-1 text-base text-gray-700">
+                                <li><b>Alternating Scoops:</b> The track shows comma-shaped scoop marks alternating on both sides.</li>
+                                <li><b>Central Drag Mark:</b> A narrow, continuous or broken straight line dragging down the center from the tail/plastron.</li>
+                                <li><b>Width:</b> Average crawl width is about $80$ cm ($31$ inches).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Key Takeaway -->
+        <section id="slide-5" class="slide-section bg-sea-green bg-opacity-90 text-white">
+            <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2">Slide 5: Key Takeaway: Vulnerability & Conservation</h2>
+
+            <div class="p-6 bg-ocean rounded-xl shadow-2xl space-y-4">
+                <p class="text-xl font-semibold">
+                    <span class="text-yellow-300 mr-2">&#9733;</span> <b>Rarest Turtle:</b> The Kemp's Ridley is considered the most endangered sea turtle globally.
+                </p>
+                <p class="text-xl font-semibold">
+                    <span class="text-yellow-300 mr-2">&#9733;</span> <b>Concentrated Vulnerability:</b> Their reliance on one primary mass nesting beach (*arribada* site in Mexico) makes the entire population extremely vulnerable to a single disaster (like an oil spill) or habitat destruction.
+                </p>
+                <p class="text-xl font-semibold">
+                    <span class="text-yellow-300 mr-2">&#9733;</span> <b>Conservation Success (Partial):</b> Intensive efforts, including protecting the nesting beaches and requiring Turtle Excluder Devices (TEDs) in fishing nets, have helped the population rebound from its historic lows.
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 6: Sources / References -->
+        <section id="slide-6" class="slide-section bg-white border-t-4 border-ocean">
+            <h2 class="text-3xl font-bold mb-6 text-ocean border-b-2 border-ocean pb-2">Slide 6: Information Sources</h2>
+            <p class="mb-4 text-lg">Below are the primary sources used for the information in this presentation. These links provide excellent, detailed information from official conservation and research organizations.</p>
+            <ul class="space-y-3 slide-list text-base">
+                <li><a href="https://www.fisheries.noaa.gov/species/kemps-ridley-turtle" target="_blank" class="text-blue-600 hover:text-blue-800 underline">NOAA Fisheries: Kemp's Ridley Turtle Profile</a></li>
+                <li><a href="https://conserveturtles.org/species/kemps-ridley/" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Sea Turtle Conservancy: Kemp's Ridley Page</a></li>
+                <li><a href="https://www.nps.gov/pais/learn/nature/nesting-and-emerging-habits.htm" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Padre Island National Seashore: Nesting Habits</a></li>
+                <li><a href="https://www.nwf.org/Educational-Resources/Wildlife-Guide/Reptiles/Sea-Turtles/Kemps-Ridley-Sea-Turtle" target="_blank" class="text-blue-600 hover:text-blue-800 underline">National Wildlife Federation: Kemp's Ridley Sea Turtle</a></li>
+            </ul>
+        </section>
+
+
+    </main>
+
+    <footer class="text-center p-4 text-gray-500 text-sm">
+        <p>Research for High School Class on Endangered Turtle Species.</p>
+    </footer>
+
+    <script>
+        // JavaScript for the navigation toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Manual scrolling logic for reliable navigation
+        // We prevent the default anchor jump and manually scroll to ensure consistency.
+        document.querySelectorAll('#navMenu a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // 1. Stop the default link behavior
+                e.preventDefault(); 
+                
+                // 2. Get the target section ID from the href attribute
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    // 3. Use JavaScript to smoothly scroll the target element into view
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+
+                // 4. Close the menu right away
+                document.getElementById('navMenu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
