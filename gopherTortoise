@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopher Tortoise: Keystone Species of the Sandhill Ecosystem</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Updated for Gopher Tortoise - Terrestrial/Earthy tones
+                        'primary': '#4a532e', // Deep Olive Green (Formal base)
+                        'secondary': '#c2b575', // Desaturated Sandy Yellow (New Secondary Color)
+                        'accent': '#f0b540', // Rich Sand Gold (Highlight)
+                        'background-light': '#f9f9f9',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Set default font and a very light gray background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9; /* Near white background */
+        }
+        /* Style for the slide containers - Formal, static look */
+        .slide-section {
+            padding: 4rem 2rem;
+            margin: 2rem auto;
+            max-width: 1000px;
+            /* Subtler shadow for a document feel */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            border-radius: 0.5rem; /* Slightly reduced rounding */
+            scroll-margin-top: 6rem; /* Offset for fixed header */
+        }
+        /* Custom list styling */
+        .slide-list li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+        .slide-list li::before {
+            content: "•";
+            color: #4a532e; /* Olive Green bullet */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1.5em;
+        }
+
+        /* Styles for the Navigation Menu Dropdown */
+        .nav-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            transition: background-color 0.2s;
+            text-align: left;
+        }
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Title -->
+    <header class="bg-primary text-white p-6 text-center shadow-md sticky top-0 z-20 rounded-b-lg">
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Gopher Tortoise</h1>
+        <p class="mt-2 text-xl md:text-2xl font-light">Conservation Report: Keystone Species of the Sandhill Ecosystem</p>
+
+        <!-- Quick Navigation Dropdown -->
+        <div class="absolute top-4 right-4 md:top-6 md:right-6">
+            <button id="navToggle" class="bg-secondary hover:bg-white hover:text-primary transition text-white font-semibold py-2 px-4 rounded-md shadow-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2">
+                Quick Nav
+            </button>
+            <div id="navMenu" class="hidden absolute right-0 mt-2 w-48 bg-primary/95 rounded-md shadow-2xl p-2 transition transform origin-top-right backdrop-blur-sm border border-secondary">
+                <a href="#slide-1" class="nav-link">1. Species Overview</a>
+                <a href="#slide-2" class="nav-link">2. Location & Habitat</a>
+                <a href="#slide-3" class="nav-link">3. Nesting Habits</a>
+                <a href="#slide-4" class="nav-link">4. Locomotion & Tracks</a>
+                <a href="#slide-5" class="nav-link">5. Key Takeaway</a>
+                <a href="#slide-6" class="nav-link font-bold">6. Sources</a>
+            </div>
+        </div>
+        <!-- End Quick Navigation -->
+    </header>
+
+    <main class="container mx-auto p-4">
+
+        <!-- Slide 1: Species Overview -->
+        <section id="slide-1" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-primary border-b border-gray-300 pb-2">Slide 1: Species Overview (The Burrow Builder)</h2>
+
+            <div class="md:flex md:space-x-8">
+                <div class="md:w-1/2">
+                    <ul class="slide-list text-lg">
+                        <li><b>Scientific Name:</b> <span class="font-mono italic">*Gopherus polyphemus*</span></li>
+                        <li><b>Conservation Status:</b> <span class="font-bold text-red-700">Threatened</span> (Florida state-listed) or Federally <span class="font-bold text-yellow-600">Threatened</span> (western distinct population segment).</li>
+                        <li><b>Size:</b> Carapace length up to $38$ cm ($15$ inches), weighing around $4 - 6$ kg ($8 - 13$ lbs).</li>
+                        <li><b>Distinguishing Feature:</b> Large, shovel-like forelimbs adapted for digging. They have a domed shell (carapace) that is brownish-gray.</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <p class="text-sm text-center text-gray-500 mb-2">Visual: Gopher Tortoise near Burrow Entrance </p>
+                    <img src="https://placehold.co/600x400/4a532e/ffffff?text=Gopher+Tortoise+at+Burrow"
+                         alt="Placeholder image of a Gopher Tortoise standing near the entrance of its burrow in sandy soil."
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/ffffff?text=Image+Not+Found'"
+                         class="w-full h-auto object-cover rounded-md shadow-md">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: Location and Habitat -->
+        <section id="slide-2" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-secondary border-b border-gray-300 pb-2">Slide 2: Location and Habitat</h2>
+            <ul class="slide-list text-lg">
+                <li><b>Range:</b> Found in the southeastern United States, including Florida, southern Georgia, Alabama, Mississippi, South Carolina, and Louisiana.</li>
+                <li><b>Preferred Habitat:</b>
+                    <ul class="ml-6 mt-2 list-disc list-inside space-y-1 text-base text-gray-700">
+                        <li><b>Dry, Sandy Uplands:</b> They require well-drained, sandy soils for digging, such as sandhills, pine flatwoods, and scrub habitats.</li>
+                        <li><b>Open Canopy:</b> They need ample sunlight to maintain body temperature and for vegetation growth.</li>
+                    </ul>
+                </li>
+                <li><b>Keystone Species Role:</b> Their deep burrows (up to $15$ meters long) are crucial, providing refuge from heat, cold, and fire for over $350$ other species (e.g., snakes, frogs, mice, insects).</li>
+                <li><b>Diet:</b> Primarily herbivorous, eating low-growing plants, grasses, legumes, and fruits.</li>
+            </ul>
+        </section>
+
+        <!-- Slide 3: Unique Nesting Habits -->
+        <section id="slide-3" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-primary border-b border-gray-300 pb-2">Slide 3: Unique Nesting Habits</h2>
+            <ul class="slide-list text-lg">
+                <li><b>Nesting Period:</b> Females lay eggs from May through July.</li>
+                <li><b>Solitary Nesting:</b> Like the Loggerhead, the Gopher Tortoise is a <span class="font-extrabold text-secondary">solitary nester</span>.</li>
+                <li><b>Nest Site:</b> Nests are often dug in the sandy mound near the entrance of the female's burrow, or sometimes in open patches of sand nearby. This placement provides good drainage and sun exposure for incubation.</li>
+                <li><b>Clutch:</b> They lay only one clutch per year, containing an average of $5$ to $8$ spherical, hard-shelled eggs.</li>
+                <li><b>Incubation:</b> Eggs incubate for a long period, typically $80$ to $110$ days, depending on temperature. The sex of the hatchling is determined by the nest temperature (Temperature-Dependent Sex Determination).</li>
+            </ul>
+        </section>
+
+        <!-- Slide 4: Locomotion and Tracks -->
+        <section id="slide-4" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-secondary border-b border-gray-300 pb-2">Slide 4: Locomotion and Tracks</h2>
+
+            <div class="md:flex md:space-x-8 flex-row-reverse">
+                <div class="md:w-1/2">
+                    <p class="text-sm text-center text-gray-600 mb-2">Visual: Tracks in Sandy Soil </p>
+                    <img src="https://placehold.co/600x200/c2b575/ffffff?text=Gopher+Tortoise+Foot+and+Shell+Tracks"
+                         alt="Placeholder image of Gopher Tortoise tracks in sand, showing four distinct toe marks and a central shell drag mark."
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x200/333333/ffffff?text=Image+Not+Found'"
+                         class="w-full h-auto object-cover rounded-md shadow-md">
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <ul class="slide-list text-lg">
+                        <li><b>Terrestrial Locomotion:</b> They move by walking and crawling, using their powerful limbs. They are slow but powerful diggers.</li>
+                        <li><b>Crawl Pattern:</b> They move diagonally, placing one front foot and the opposite rear foot down simultaneously (alternating gait).</li>
+                        <li><b>Tracks (Marks in Sand):</b>
+                            <ul class="ml-6 mt-2 list-disc list-inside space-y-1 text-base text-gray-700">
+                                <li><b>Foot Marks:</b> Show four distinct toe marks on each foot.</li>
+                                <li><b>Central Drag Mark:</b> A noticeable, continuous, or broken line down the center is created by the plastron (bottom shell) dragging on the ground.</li>
+                                <li><b>Burrow Entrance:</b> The most common sign is the distinctive half-moon or fan-shaped mound of sand piled outside the burrow opening.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Key Takeaway -->
+        <section id="slide-5" class="slide-section bg-secondary text-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 border-b border-white/50 pb-2">Slide 5: Key Takeaway: Habitat is Survival</h2>
+
+            <div class="p-6 bg-primary rounded-md shadow-2xl space-y-4">
+                <p class="text-xl font-semibold">
+                    <span class="text-accent mr-2">&#9733;</span> <b>Habitat Loss:</b> The biggest threat is the destruction of their upland habitat for development and agriculture, which is rapidly fragmenting their populations.
+                </p>
+                <p class="text-xl font-semibold">
+                    <span class="text-accent mr-2">&#9733;</span> <b>Fire Dependency:</b> Their scrub and pine flatwood habitats are naturally dependent on frequent, low-intensity fire to prevent overgrowth. Fire suppression leads to unsuitable, dense habitat.
+                </p>
+                <p class="text-xl font-semibold">
+                    <span class="text-accent mr-2">&#9733;</span> <b>Conservation Focus:</b> Protection efforts center on acquiring and protecting large tracts of sandy habitat, as well as conducting prescribed burns to maintain the necessary ecosystem for the tortoise and the hundreds of species that rely on its burrow.
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 6: Sources / References -->
+        <section id="slide-6" class="slide-section bg-white border border-gray-200 border-t-4 border-primary">
+            <h2 class="text-3xl font-bold mb-6 text-primary border-b border-gray-300 pb-2">Slide 6: Information Sources</h2>
+            <p class="mb-4 text-lg">Below are the primary sources used for the information in this report.</p>
+            <ul class="space-y-3 slide-list text-base">
+                <li><a href="https://myfwc.com/wildlife/species-inventory/reptiles/turtles-terrestrial/gopher-tortoise/" target="_blank" class="text-blue-700 hover:text-blue-900 underline">Florida Fish and Wildlife Conservation Commission: Gopher Tortoise</a></li>
+                <li><a href="https://www.fws.gov/species/gopher-tortoise-gopherus-polyphemus" target="_blank" class="text-blue-700 hover:text-blue-900 underline">U.S. Fish & Wildlife Service: Gopher Tortoise Profile</a></li>
+                <li><a href="https://www.nwf.org/Educational-Resources/Wildlife-Guide/Reptiles/Gopher-Tortoise" target="_blank" class="text-blue-700 hover:text-blue-900 underline">National Wildlife Federation: Gopher Tortoise</a></li>
+                <li><a href="https://www.nature.org/en-us/get-involved/how-to-help/animals-we-protect/gopher-tortoise/" target="_blank" class="text-blue-700 hover:text-blue-900 underline">The Nature Conservancy: Gopher Tortoise</a></li>
+            </ul>
+        </section>
+
+
+    </main>
+
+    <footer class="text-center p-4 text-gray-500 text-sm border-t border-gray-300 mt-4">
+        <p>Academic Report for Educational Purposes.</p>
+    </footer>
+
+    <script>
+        // JavaScript for the navigation toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Manual scrolling logic for reliable navigation
+        // We prevent the default anchor jump and manually scroll to ensure consistency.
+        document.querySelectorAll('#navMenu a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // 1. Stop the default link behavior
+                e.preventDefault(); 
+                
+                // 2. Get the target section ID from the href attribute
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    // 3. Use JavaScript to smoothly scroll the target element into view
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+
+                // 4. Close the menu right away
+                document.getElementById('navMenu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
