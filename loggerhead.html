@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loggerhead Sea Turtle: Global Traveler and Coastal Forager</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Updated for Loggerhead - Earth tones (shell, sand) and deep blue (ocean)
+                        'primary': '#8b4513', // Saddle Brown (Shell)
+                        'secondary': '#d38e3a', // Desaturated Burnt Orange/Gold (New secondary color)
+                        'accent': '#f7c327', // Sand Gold
+                        'background-light': '#f9f9f9',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Set default font and a very light gray background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9; /* Near white background */
+        }
+        /* Style for the slide containers - Formal, static look */
+        .slide-section {
+            padding: 4rem 2rem;
+            margin: 2rem auto;
+            max-width: 1000px;
+            /* Subtler shadow for a document feel */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            border-radius: 0.5rem; /* Slightly reduced rounding */
+            scroll-margin-top: 6rem; /* Offset for fixed header */
+        }
+        /* Custom list styling */
+        .slide-list li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+        .slide-list li::before {
+            content: "•";
+            color: #8b4513; /* Shell Brown bullet */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1.5em;
+        }
+
+        /* Styles for the Navigation Menu Dropdown */
+        .nav-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            transition: background-color 0.2s;
+            text-align: left;
+        }
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Title -->
+    <header class="bg-primary text-white p-6 text-center shadow-md sticky top-0 z-20 rounded-b-lg">
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Loggerhead Sea Turtle</h1>
+        <p class="mt-2 text-xl md:text-2xl font-light">Conservation Report: Global Traveler and Coastal Forager</p>
+
+        <!-- Quick Navigation Dropdown -->
+        <div class="absolute top-4 right-4 md:top-6 md:right-6">
+            <button id="navToggle" class="bg-secondary hover:bg-white hover:text-primary transition text-white font-semibold py-2 px-4 rounded-md shadow-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2">
+                Quick Nav
+            </button>
+            <div id="navMenu" class="hidden absolute right-0 mt-2 w-48 bg-primary/95 rounded-md shadow-2xl p-2 transition transform origin-top-right backdrop-blur-sm border border-secondary">
+                <a href="#slide-1" class="nav-link">1. Species Overview</a>
+                <a href="#slide-2" class="nav-link">2. Location & Habitat</a>
+                <a href="#slide-3" class="nav-link">3. Nesting Habits</a>
+                <a href="#slide-4" class="nav-link">4. Locomotion & Tracks</a>
+                <a href="#slide-5" class="nav-link">5. Key Takeaway</a>
+                <a href="#slide-6" class="nav-link font-bold">6. Sources</a>
+            </div>
+        </div>
+        <!-- End Quick Navigation -->
+    </header>
+
+    <main class="container mx-auto p-4">
+
+        <!-- Slide 1: Species Overview -->
+        <section id="slide-1" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-primary border-b border-gray-300 pb-2">Slide 1: Species Overview (The Coastal Forager)</h2>
+
+            <div class="md:flex md:space-x-8">
+                <div class="md:w-1/2">
+                    <ul class="slide-list text-lg">
+                        <li><b>Scientific Name:</b> <span class="font-mono italic">*Caretta caretta*</span></li>
+                        <li><b>Conservation Status:</b> <span class="font-bold text-red-700">Endangered</span> (Globally, with varying population segments).</li>
+                        <li><b>Size:</b> A large species, typically measuring $90 - 110$ cm ($35 - 43$ inches) in carapace length and weighing about $100 - 160$ kg ($220 - 350$ lbs).</li>
+                        <li><b>Distinguishing Feature:</b> Named for its very large head and powerful jaw muscles. The carapace (shell) is characteristically reddish-brown.</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <p class="text-sm text-center text-gray-500 mb-2">Visual: Adult Loggerhead Swimming </p>
+                    <img src="https://placehold.co/600x400/8b4513/ffffff?text=Loggerhead+Sea+Turtle"
+                         alt="Placeholder image of a Loggerhead Sea Turtle swimming underwater."
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/ffffff?text=Image+Not+Found'"
+                         class="w-full h-auto object-cover rounded-md shadow-md">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: Location and Habitat -->
+        <section id="slide-2" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-secondary border-b border-gray-300 pb-2">Slide 2: Location and Habitat</h2>
+            <ul class="slide-list text-lg">
+                <li><b>Global Range:</b> Found in temperate and tropical regions across the Atlantic, Pacific, and Indian Oceans. They have a truly global distribution.</li>
+                <li><b>Major Populations:</b> Key areas include the Southeast U.S. coast, Mediterranean Sea, Pacific Mexico, and Australia.</li>
+                <li><b>Preferred Habitat:</b>
+                    <ul class="ml-6 mt-2 list-disc list-inside space-y-1 text-base text-gray-700">
+                        <li><b>Diverse:</b> Found in coastal shallow waters, estuaries, and deeper open ocean habitats during migration.</li>
+                        <li><b>Bottom Type:</b> Favors hard-bottom habitats (rocky reefs) and soft-bottom areas (sand, mud) where hard-shelled prey live.</li>
+                    </ul>
+                </li>
+                <li><b>Diet:</b> Benthic (sea floor) carnivore. The primary diet consists of hard-shelled invertebrates like <span class="font-semibold text-primary">conchs, crabs, clams, and sea urchins</span>.</li>
+            </ul>
+        </section>
+
+        <!-- Slide 3: Unique Nesting Habits (Solitary Nesters) -->
+        <section id="slide-3" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-primary border-b border-gray-300 pb-2">Slide 3: Unique Nesting Habits</h2>
+            <ul class="slide-list text-lg">
+                <li><b>Primary Nesting Sites:</b> The single largest nesting population is found in Florida, USA. Other major sites are in Oman, Australia, and Brazil.</li>
+                <li><b>Timing:</b> Nesting occurs from late spring to early fall (May through August).</li>
+                <li><b>No Arribadas:</b> Unlike the Kemp's Ridley, the Loggerhead is a <span class="font-extrabold text-secondary">solitary nester</span>, emerging alone to lay eggs.</li>
+                <li><b>Nocturnal Nesting:</b> They nest primarily during <span class="font-extrabold text-secondary">nighttime hours</span>, using the dark for cover.</li>
+                <li><b>Clutch:</b> Females nest every 2 to 4 years, laying about 3 to 5 clutches (nests) per season, with an average of $100$ to $126$ eggs per nest. Incubation lasts around $60$ days.</li>
+            </ul>
+        </section>
+
+        <!-- Slide 4: Locomotion and Tracks -->
+        <section id="slide-4" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-secondary border-b border-gray-300 pb-2">Slide 4: Locomotion and Tracks</h2>
+
+            <div class="md:flex md:space-x-8 flex-row-reverse">
+                <div class="md:w-1/2">
+                    <p class="text-sm text-center text-gray-600 mb-2">Visual: Tracks in the Sand (Crawl Marks) </p>
+                    <img src="https://placehold.co/600x200/d38e3a/ffffff?text=Loggerhead+Symmetrical+Crawl+Tracks"
+                         alt="Placeholder image of Loggerhead sea turtle symmetrical crawl tracks in the sand with parallel flipper marks."
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x200/333333/ffffff?text=Image+Not+Found'"
+                         class="w-full h-auto object-cover rounded-md shadow-md">
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <ul class="slide-list text-lg">
+                        <li><b>Ocean Locomotion:</b> Powerful swimmers, capable of long-distance migrations between feeding and nesting grounds.</li>
+                        <li><b>Beach Locomotion (Crawl Pattern):</b>
+                            <ul class="ml-6 mt-2 list-disc list-inside space-y-1 text-base text-gray-700">
+                                <li>Loggerheads use a <b>symmetrical crawl</b> motion (both front flippers move together, followed by both rear flippers).</li>
+                            </ul>
+                        </li>
+                        <li><b>Tracks (Crawl Marks):</b>
+                            <ul class="ml-6 mt-2 list-disc list-inside space-y-1 text-base text-gray-700">
+                                <li><b>Parallel Trenches:</b> The track shows deep, distinct parallel lines or scoops created by the flippers moving simultaneously.</li>
+                                <li><b>No Central Drag Mark:</b> Typically, there is no noticeable central drag mark (unlike the Kemp's Ridley).</li>
+                                <li><b>Width:</b> Average crawl width is about $70 - 100$ cm ($27 - 40$ inches), making them one of the widest tracks.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Key Takeaway -->
+        <section id="slide-5" class="slide-section bg-secondary text-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 border-b border-white/50 pb-2">Slide 5: Key Takeaway: Widespread Threat</h2>
+
+            <div class="p-6 bg-primary rounded-md shadow-2xl space-y-4">
+                <p class="text-xl font-semibold">
+                    <span class="text-accent mr-2">&#9733;</span> <b>Bycatch Vulnerability:</b> Because they frequent coastal areas and continental shelves, Loggerheads are highly susceptible to accidental capture (bycatch) in commercial fishing gear, particularly trawls and longlines.
+                </p>
+                <p class="text-xl font-semibold">
+                    <span class="text-accent mr-2">&#9733;</span> <b>Hatchling Disorientation:</b> Their nocturnal nesting exposes hatchlings to artificial lighting on beaches, causing them to crawl away from the ocean and die from exhaustion or predators.
+                </p>
+                <p class="text-xl font-semibold">
+                    <span class="text-accent mr-2">&#9733;</span> <b>Conservation Focus:</b> Protection involves managing fisheries, preserving crucial nesting beaches (especially in Florida), and efforts to reduce plastic pollution that they often mistake for food.
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 6: Sources / References -->
+        <section id="slide-6" class="slide-section bg-white border border-gray-200 border-t-4 border-primary">
+            <h2 class="text-3xl font-bold mb-6 text-primary border-b border-gray-300 pb-2">Slide 6: Information Sources</h2>
+            <p class="mb-4 text-lg">Below are the primary sources used for the information in this report.</p>
+            <ul class="space-y-3 slide-list text-base">
+                <li><a href="https://www.fisheries.noaa.gov/species/loggerhead-sea-turtle" target="_blank" class="text-blue-700 hover:text-blue-900 underline">NOAA Fisheries: Loggerhead Turtle Profile</a></li>
+                <li><a href="https://conserveturtles.org/species/loggerhead/" target="_blank" class="text-blue-700 hover:text-blue-900 underline">Sea Turtle Conservancy: Loggerhead Page</a></li>
+                <li><a href="https://www.fws.gov/species/loggerhead-sea-turtle-caretta-caretta" target="_blank" class="text-blue-700 hover:text-blue-900 underline">U.S. Fish & Wildlife Service: Loggerhead Profile</a></li>
+                <li><a href="https://www.worldwildlife.org/species/loggerhead-turtle" target="_blank" class="text-blue-700 hover:text-blue-900 underline">WWF: Loggerhead Turtle Overview</a></li>
+            </ul>
+        </section>
+
+
+    </main>
+
+    <footer class="text-center p-4 text-gray-500 text-sm border-t border-gray-300 mt-4">
+        <p>Academic Report for Educational Purposes.</p>
+    </footer>
+
+    <script>
+        // JavaScript for the navigation toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Manual scrolling logic for reliable navigation
+        // We prevent the default anchor jump and manually scroll to ensure consistency.
+        document.querySelectorAll('#navMenu a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // 1. Stop the default link behavior
+                e.preventDefault(); 
+                
+                // 2. Get the target section ID from the href attribute
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    // 3. Use JavaScript to smoothly scroll the target element into view
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+
+                // 4. Close the menu right away
+                document.getElementById('navMenu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
