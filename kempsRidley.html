@@ -15,28 +15,30 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        'ocean': '#0077b6',
-                        'sea-green': '#00b4d8',
-                        'sand': '#ffcdb2',
+                        // Updated for a more formal, corporate look
+                        'ocean': '#1a4060', // Deep Navy Blue
+                        'sea-green': '#006d77', // Deep Teal
+                        'sand': '#f0e68c', // Muted Yellowish Sand
+                        'background-light': '#f9f9f9',
                     }
                 }
             }
         }
     </script>
     <style>
-        /* Set default font and background */
+        /* Set default font and a very light gray background */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f9ff; /* Light sky blue background */
+            background-color: #f9f9f9; /* Near white background */
         }
-        /* Style for the slide containers */
+        /* Style for the slide containers - Formal, static look */
         .slide-section {
-            padding: 4rem 1rem;
+            padding: 4rem 2rem;
             margin: 2rem auto;
             max-width: 1000px;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 1.5rem;
-            transition: transform 0.3s ease-in-out;
+            /* Subtler shadow for a document feel */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            border-radius: 0.5rem; /* Slightly reduced rounding */
             scroll-margin-top: 6rem; /* Offset for fixed header */
         }
         /* Custom list styling */
@@ -44,10 +46,11 @@
             margin-bottom: 0.75rem;
             padding-left: 1.5rem;
             position: relative;
+            line-height: 1.6;
         }
         .slide-list li::before {
             content: "•";
-            color: #0077b6; /* Ocean blue bullet */
+            color: #1a4060; /* Deep Navy Blue bullet */
             font-weight: bold;
             display: inline-block;
             width: 1em;
@@ -58,29 +61,29 @@
         .nav-link {
             display: block;
             padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
+            border-radius: 0.25rem;
             transition: background-color 0.2s;
             text-align: left;
         }
         .nav-link:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.15);
         }
     </style>
 </head>
 <body class="text-gray-800">
 
     <!-- Header / Title -->
-    <header class="bg-ocean text-white p-6 text-center shadow-lg sticky top-0 z-20 rounded-b-xl">
+    <header class="bg-ocean text-white p-6 text-center shadow-md sticky top-0 z-20 rounded-b-lg">
         <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Kemp's Ridley Sea Turtle</h1>
-        <p class="mt-2 text-xl md:text-2xl font-light">Endangered Giant of the Gulf</p>
+        <p class="mt-2 text-xl md:text-2xl font-light">Conservation Report: Endangered Giant of the Gulf</p>
 
-        <!-- Quick Navigation Dropdown -->
+        <!-- Quick Navigation Dropdown (Styling adjusted for formal look) -->
         <div class="absolute top-4 right-4 md:top-6 md:right-6">
-            <button id="navToggle" class="bg-sea-green hover:bg-white hover:text-ocean transition text-white font-semibold py-2 px-4 rounded-lg shadow-xl focus:outline-none focus:ring-4 focus:ring-sea-green focus:ring-opacity-50">
+            <button id="navToggle" class="bg-sea-green hover:bg-white hover:text-ocean transition text-white font-semibold py-2 px-4 rounded-md shadow-lg focus:outline-none focus:ring-2 focus:ring-sea-green focus:ring-offset-2">
                 Quick Nav
             </button>
-            <div id="navMenu" class="hidden absolute right-0 mt-2 w-48 bg-ocean/90 rounded-lg shadow-2xl p-2 transition transform origin-top-right backdrop-blur-sm">
-                <a href="#slide-1" class="nav-link">1. Overview</a>
+            <div id="navMenu" class="hidden absolute right-0 mt-2 w-48 bg-ocean/95 rounded-md shadow-2xl p-2 transition transform origin-top-right backdrop-blur-sm border border-sea-green">
+                <a href="#slide-1" class="nav-link">1. Species Overview</a>
                 <a href="#slide-2" class="nav-link">2. Location & Habitat</a>
                 <a href="#slide-3" class="nav-link">3. Nesting Habits</a>
                 <a href="#slide-4" class="nav-link">4. Locomotion & Tracks</a>
@@ -94,32 +97,31 @@
     <main class="container mx-auto p-4">
 
         <!-- Slide 1: Species Overview -->
-        <section id="slide-1" class="slide-section bg-white">
-            <h2 class="text-3xl font-bold mb-6 text-sea-green border-b-2 border-sea-green pb-2">Slide 1: Species Overview (The Smallest Sea Turtle)</h2>
+        <section id="slide-1" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-sea-green border-b border-gray-300 pb-2">Slide 1: Species Overview (The Smallest Sea Turtle)</h2>
 
             <div class="md:flex md:space-x-8">
                 <div class="md:w-1/2">
                     <ul class="slide-list text-lg">
                         <li><b>Scientific Name:</b> <span class="font-mono italic">*Lepidochelys kempii*</span></li>
-                        <li><b>Conservation Status:</b> <span class="font-bold text-red-600">Critically Endangered</span></li>
+                        <li><b>Conservation Status:</b> <span class="font-bold text-red-700">Critically Endangered</span></li>
                         <li><b>Size:</b> The smallest sea turtle species, typically measuring $60 - 70$ cm ($24 - 28$ inches) and weighing about $35 - 45$ kg ($75 - 100$ lbs).</li>
                         <li><b>Distinguishing Feature:</b> Dark gray or olive-green carapace (shell) with a creamy white or yellowish plastron (bottom shell). Its powerful jaws are adapted for crushing hard-shelled prey.</li>
                     </ul>
                 </div>
                 <div class="md:w-1/2 mt-6 md:mt-0">
                     <p class="text-sm text-center text-gray-500 mb-2">Visual: Adult Kemp's Ridley Swimming </p>
-                        <img src="https://www.nps.gov/pais/learn/nature/images/NPS1_20150504-CL014-14.jpg?maxwidth=650&autorotate=false&quality=78&format=webp" 
-                            alt="Kemp’s Ridley nesting on beach" 
-                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/ffffff?text=Image+Not+Found'"
-                         class="w-full h-auto object-cover rounded-lg shadow-md transition duration-300 hover:scale-[1.02]">
-                         
+                    <img src="https://placehold.co/600x400/1a4060/ffffff?text=Kemp's+Ridley+Sea+Turtle"
+                         alt="Placeholder image of a Kemp's Ridley Sea Turtle swimming underwater."
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/ffffff?text=Image+Not+Found'"
+                         class="w-full h-auto object-cover rounded-md shadow-md">
                 </div>
             </div>
         </section>
 
         <!-- Slide 2: Location and Habitat -->
-        <section id="slide-2" class="slide-section bg-white">
-            <h2 class="text-3xl font-bold mb-6 text-ocean border-b-2 border-ocean pb-2">Slide 2: Location and Habitat</h2>
+        <section id="slide-2" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-ocean border-b border-gray-300 pb-2">Slide 2: Location and Habitat</h2>
             <ul class="slide-list text-lg">
                 <li><b>Primary Range:</b> The entire Gulf of Mexico is the main foraging and breeding ground for adults.</li>
                 <li><b>Juvenile Range:</b> Young turtles travel widely along the U.S. Atlantic coast, found from Florida all the way up to New England and occasionally Nova Scotia.</li>
@@ -129,33 +131,33 @@
                         <li><b>Bottom Type:</b> They prefer muddy or sandy bottoms, often near estuaries and shallow seagrass beds.</li>
                     </ul>
                 </li>
-                <li><b>Diet:</b> They are carnivorous benthic (sea floor) feeders, primarily eating <span class="font-semibold">crabs</span>, but also mollusks, shrimp, and occasional fish or jellyfish.</li>
+                <li><b>Diet:</b> They are carnivorous benthic (sea floor) feeders, primarily eating <span class="font-semibold text-ocean">crabs</span>, but also mollusks, shrimp, and occasional fish or jellyfish.</li>
             </ul>
         </section>
 
         <!-- Slide 3: Unique Nesting Habits (The Arribada) -->
-        <section id="slide-3" class="slide-section bg-white">
-            <h2 class="text-3xl font-bold mb-6 text-sea-green border-b-2 border-sea-green pb-2">Slide 3: Unique Nesting Habits (The Arribada)</h2>
+        <section id="slide-3" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-sea-green border-b border-gray-300 pb-2">Slide 3: Unique Nesting Habits (The Arribada)</h2>
             <ul class="slide-list text-lg">
                 <li><b>Primary Nesting Site:</b> Almost 95% of worldwide nesting occurs on a single stretch of beach in Tamaulipas, Mexico, particularly at Rancho Nuevo.</li>
                 <li><b>Timing:</b> Nesting occurs between April and July. Females typically nest 2 to 3 times per season.</li>
-                <li><b>Diurnal Nesting:</b> They are one of the only sea turtle species that nests primarily during <span class="font-extrabold text-blue-800">daylight hours</span>.</li>
+                <li><b>Diurnal Nesting:</b> They are one of the only sea turtle species that nests primarily during <span class="font-extrabold text-ocean">daylight hours</span>.</li>
                 <li><b>The "Arribada" (Arrival):</b> They are famous for their synchronized mass nesting events, called *arribadas* (Spanish for "arrival"). Hundreds or even thousands of females emerge from the sea together.</li>
                 <li><b>Clutch:</b> Each nest (clutch) contains approximately $100 - 110$ eggs, which incubate for about $50 - 60$ days.</li>
             </ul>
         </section>
 
         <!-- Slide 4: Locomotion and Tracks -->
-        <section id="slide-4" class="slide-section bg-white">
-            <h2 class="text-3xl font-bold mb-6 text-ocean border-b-2 border-ocean pb-2">Slide 4: Locomotion and Tracks</h2>
+        <section id="slide-4" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-ocean border-b border-gray-300 pb-2">Slide 4: Locomotion and Tracks</h2>
 
             <div class="md:flex md:space-x-8 flex-row-reverse">
                 <div class="md:w-1/2">
                     <p class="text-sm text-center text-gray-600 mb-2">Visual: Tracks in the Sand (Crawl Marks) </p>
-                    <img src="https://i0.wp.com/katypye.com/wp-content/uploads/2012/03/ridley-tracks-geekphilosopher1.jpg" 
-                         alt="Kemp’s Ridley track in sand"
+                    <img src="https://placehold.co/600x200/006d77/ffffff?text=Kemp's+Ridley+Alternating+Crawl+Tracks"
+                         alt="Placeholder image of Kemp's Ridley sea turtle alternating crawl tracks in the sand with a central tail drag."
                          onerror="this.onerror=null;this.src='https://placehold.co/600x200/333333/ffffff?text=Image+Not+Found'"
-                         class="w-full h-auto object-cover rounded-lg shadow-md transition duration-300 hover:scale-[1.02]">
+                         class="w-full h-auto object-cover rounded-md shadow-md">
                 </div>
                 <div class="md:w-1/2 mt-6 md:mt-0">
                     <ul class="slide-list text-lg">
@@ -178,39 +180,39 @@
         </section>
 
         <!-- Slide 5: Key Takeaway -->
-        <section id="slide-5" class="slide-section bg-sea-green bg-opacity-90 text-white">
-            <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2">Slide 5: Key Takeaway: Vulnerability & Conservation</h2>
+        <section id="slide-5" class="slide-section bg-sea-green text-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 border-b border-white/50 pb-2">Slide 5: Key Takeaway: Vulnerability & Conservation</h2>
 
-            <div class="p-6 bg-ocean rounded-xl shadow-2xl space-y-4">
+            <div class="p-6 bg-ocean rounded-md shadow-2xl space-y-4">
                 <p class="text-xl font-semibold">
-                    <span class="text-yellow-300 mr-2">&#9733;</span> <b>Rarest Turtle:</b> The Kemp's Ridley is considered the most endangered sea turtle globally.
+                    <span class="text-sand mr-2">&#9733;</span> <b>Rarest Turtle:</b> The Kemp's Ridley is considered the most endangered sea turtle globally.
                 </p>
                 <p class="text-xl font-semibold">
-                    <span class="text-yellow-300 mr-2">&#9733;</span> <b>Concentrated Vulnerability:</b> Their reliance on one primary mass nesting beach (*arribada* site in Mexico) makes the entire population extremely vulnerable to a single disaster (like an oil spill) or habitat destruction.
+                    <span class="text-sand mr-2">&#9733;</span> <b>Concentrated Vulnerability:</b> Their reliance on one primary mass nesting beach (*arribada* site in Mexico) makes the entire population extremely vulnerable to a single disaster (like an oil spill) or habitat destruction.
                 </p>
                 <p class="text-xl font-semibold">
-                    <span class="text-yellow-300 mr-2">&#9733;</span> <b>Conservation Success (Partial):</b> Intensive efforts, including protecting the nesting beaches and requiring Turtle Excluder Devices (TEDs) in fishing nets, have helped the population rebound from its historic lows.
+                    <span class="text-sand mr-2">&#9733;</span> <b>Conservation Success (Partial):</b> Intensive efforts, including protecting the nesting beaches and requiring Turtle Excluder Devices (TEDs) in fishing nets, have helped the population rebound from its historic lows.
                 </p>
             </div>
         </section>
 
         <!-- Slide 6: Sources / References -->
-        <section id="slide-6" class="slide-section bg-white border-t-4 border-ocean">
-            <h2 class="text-3xl font-bold mb-6 text-ocean border-b-2 border-ocean pb-2">Slide 6: Information Sources</h2>
+        <section id="slide-6" class="slide-section bg-white border border-gray-200 border-t-4 border-ocean">
+            <h2 class="text-3xl font-bold mb-6 text-ocean border-b border-gray-300 pb-2">Slide 6: Information Sources</h2>
             <p class="mb-4 text-lg">Below are the primary sources used for the information in this presentation. These links provide excellent, detailed information from official conservation and research organizations.</p>
             <ul class="space-y-3 slide-list text-base">
-                <li><a href="https://www.fisheries.noaa.gov/species/kemps-ridley-turtle" target="_blank" class="text-blue-600 hover:text-blue-800 underline">NOAA Fisheries: Kemp's Ridley Turtle Profile</a></li>
-                <li><a href="https://conserveturtles.org/species/kemps-ridley/" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Sea Turtle Conservancy: Kemp's Ridley Page</a></li>
-                <li><a href="https://www.nps.gov/pais/learn/nature/nesting-and-emerging-habits.htm" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Padre Island National Seashore: Nesting Habits</a></li>
-                <li><a href="https://www.nwf.org/Educational-Resources/Wildlife-Guide/Reptiles/Sea-Turtles/Kemps-Ridley-Sea-Turtle" target="_blank" class="text-blue-600 hover:text-blue-800 underline">National Wildlife Federation: Kemp's Ridley Sea Turtle</a></li>
+                <li><a href="https://www.fisheries.noaa.gov/species/kemps-ridley-turtle" target="_blank" class="text-blue-700 hover:text-blue-900 underline">NOAA Fisheries: Kemp's Ridley Turtle Profile</a></li>
+                <li><a href="https://conserveturtles.org/species/kemps-ridley/" target="_blank" class="text-blue-700 hover:text-blue-900 underline">Sea Turtle Conservancy: Kemp's Ridley Page</a></li>
+                <li><a href="https://www.nps.gov/pais/learn/nature/nesting-and-emerging-habits.htm" target="_blank" class="text-blue-700 hover:text-blue-900 underline">Padre Island National Seashore: Nesting Habits</a></li>
+                <li><a href="https://www.nwf.org/Educational-Resources/Wildlife-Guide/Reptiles/Sea-Turtles/Kemps-Ridley-Sea-Turtle" target="_blank" class="text-blue-700 hover:text-blue-900 underline">National Wildlife Federation: Kemp's Ridley Sea Turtle</a></li>
             </ul>
         </section>
 
 
     </main>
 
-    <footer class="text-center p-4 text-gray-500 text-sm">
-        <p>Research for High School Class on Endangered Turtle Species.</p>
+    <footer class="text-center p-4 text-gray-500 text-sm border-t border-gray-300 mt-4">
+        <p>Academic Report for Educational Purposes.</p>
     </footer>
 
     <script>
