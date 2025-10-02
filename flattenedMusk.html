@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flattened Musk Turtle: Rare Dweller of the Alabama Streams</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Updated for Flattened Musk Turtle - River/Moss tones
+                        'primary': '#38544a', // Deep Moss Green (Formal base)
+                        'secondary': '#8a9597', // Desaturated Blue-Gray/Slate (Accent/Water color)
+                        'accent': '#b5d0d0', // Light Teal/Pebble (Highlight)
+                        'background-light': '#f9f9f9',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Set default font and a very light gray background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9; /* Near white background */
+        }
+        /* Style for the slide containers - Formal, static look */
+        .slide-section {
+            padding: 4rem 2rem;
+            margin: 2rem auto;
+            max-width: 1000px;
+            /* Subtler shadow for a document feel */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            border-radius: 0.5rem; /* Slightly reduced rounding */
+            scroll-margin-top: 6rem; /* Offset for fixed header */
+        }
+        /* Custom list styling */
+        .slide-list li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+        .slide-list li::before {
+            content: "•";
+            color: #38544a; /* Moss Green bullet */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1.5em;
+        }
+
+        /* Styles for the Navigation Menu Dropdown */
+        .nav-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            transition: background-color 0.2s;
+            text-align: left;
+        }
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Title -->
+    <header class="bg-primary text-white p-6 text-center shadow-md sticky top-0 z-20 rounded-b-lg">
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Flattened Musk Turtle</h1>
+        <p class="mt-2 text-xl md:text-2xl font-light">Conservation Report: Rare Dweller of the Alabama Streams</p>
+
+        <!-- Quick Navigation Dropdown -->
+        <div class="absolute top-4 right-4 md:top-6 md:right-6">
+            <button id="navToggle" class="bg-secondary hover:bg-white hover:text-primary transition text-white font-semibold py-2 px-4 rounded-md shadow-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2">
+                Quick Nav
+            </button>
+            <div id="navMenu" class="hidden absolute right-0 mt-2 w-48 bg-primary/95 rounded-md shadow-2xl p-2 transition transform origin-top-right backdrop-blur-sm border border-secondary">
+                <a href="#slide-1" class="nav-link">1. Species Overview</a>
+                <a href="#slide-2" class="nav-link">2. Location & Habitat</a>
+                <a href="#slide-3" class="nav-link">3. Unique Behavior</a>
+                <a href="#slide-4" class="nav-link">4. Shell Morphology</a>
+                <a href="#slide-5" class="nav-link">5. Key Takeaway</a>
+                <a href="#slide-6" class="nav-link font-bold">6. Sources</a>
+            </div>
+        </div>
+        <!-- End Quick Navigation -->
+    </header>
+
+    <main class="container mx-auto p-4">
+
+        <!-- Slide 1: Species Overview -->
+        <section id="slide-1" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-primary border-b border-gray-300 pb-2">Slide 1: Species Overview (The Stream Specialist)</h2>
+
+            <div class="md:flex md:space-x-8">
+                <div class="md:w-1/2">
+                    <ul class="slide-list text-lg">
+                        <li><b>Scientific Name:</b> <span class="font-mono italic">*Sternotherus depressus*</span></li>
+                        <li><b>Conservation Status:</b> Federally <span class="font-bold text-red-700">Threatened</span>. It is one of the most imperiled turtles in North America.</li>
+                        <li><b>Size:</b> Very small, with a carapace length rarely exceeding $11.5$ cm ($4.5$ inches).</li>
+                        <li><b>Distinguishing Feature:</b> Its shell is noticeably flatter and more oval than other musk turtles, an adaptation for living under rocks and crevices in fast-moving streams.</li>
+                        <li><b>"Stinkpot":</b> All musk turtles, including this one, can release a foul-smelling musk when handled, used as a defense mechanism.</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <p class="text-sm text-center text-gray-500 mb-2">Visual: Flattened Musk Turtle in Water </p>
+                    <img src="https://placehold.co/600x400/38544a/ffffff?text=Flattened+Musk+Turtle+Underwater"
+                         alt="Placeholder image of a Flattened Musk Turtle on the river bottom."
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/ffffff?text=Image+Not+Found'"
+                         class="w-full h-auto object-cover rounded-md shadow-md">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: Location and Habitat -->
+        <section id="slide-2" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-secondary border-b border-gray-300 pb-2">Slide 2: Location and Habitat (Endemic Range)</h2>
+            <ul class="slide-list text-lg">
+                <li><b>Limited Range:</b> This turtle is endemic (naturally found only) to a highly restricted area in the **Mobile Basin** in northern Alabama, USA.</li>
+                <li><b>Specific Habitat:</b>
+                    <ul class="ml-6 mt-2 list-disc list-inside space-y-1 text-base text-gray-700">
+                        <li>Prefers <span class="font-semibold text-primary">clear, rocky streams and medium-sized rivers</span> with moderate currents.</li>
+                        <li>They live primarily on the river bottom, seeking shelter among limestone crevices, slab rocks, and submerged logs.</li>
+                    </ul>
+                </li>
+                <li><b>Activity:</b> Mostly aquatic and nocturnal, meaning they are active at night underwater.</li>
+                <li><b>Diet:</b> Carnivorous. They mainly eat aquatic insects (like caddisfly larvae), snails, mussels, and small crayfish.</li>
+            </ul>
+        </section>
+
+        <!-- Slide 3: Unique Behavior -->
+        <section id="slide-3" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-primary border-b border-gray-300 pb-2">Slide 3: Unique Behavior</h2>
+            <ul class="slide-list text-lg">
+                <li><b>Aestivation:</b> Unlike hibernation, these turtles often enter a period of **aestivation** (dormancy during the summer) when stream conditions become dry or stagnant.</li>
+                <li><b>Nesting:</b> Females lay a very small clutch of eggs, typically only 1 to 3, usually under rocks or in sandy stream banks near the water's edge. They may lay multiple clutches per year.</li>
+                <li><b>Foraging:</b> They are **"bottom-walkers,"** moving along the stream bed to find food instead of swimming freely.</li>
+                <li><b>Sexual Maturity:</b> They are slow to mature, which makes it harder for the species to recover from population losses. Females may not reach maturity until $7$ to $10$ years of age.</li>
+            </ul>
+        </section>
+
+        <!-- Slide 4: Shell Morphology (An Adaptation) -->
+        <section id="slide-4" class="slide-section bg-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 text-secondary border-b border-gray-300 pb-2">Slide 4: Shell Morphology (An Adaptation)</h2>
+
+            <div class="md:flex md:space-x-8 flex-row-reverse">
+                <div class="md:w-1/2">
+                    <p class="text-sm text-center text-gray-600 mb-2">Visual: Flattened Shell Profile </p>
+                    <img src="https://placehold.co/600x200/8a9597/ffffff?text=Flattened+Musk+Turtle+Shell+Profile"
+                         alt="Placeholder image of the low, flat profile of the turtle's shell."
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x200/333333/ffffff?text=Image+Not+Found'"
+                         class="w-full h-auto object-cover rounded-md shadow-md">
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <ul class="slide-list text-lg">
+                        <li><b>Carapace Shape:</b> The extremely low, flat shape of the shell is its defining feature.</li>
+                        <li><b>Adaptive Advantage:</b>
+                            <ul class="ml-6 mt-2 list-disc list-inside space-y-1 text-base text-gray-700">
+                                <li>Allows the turtle to <span class="font-extrabold text-secondary">crawl under rocks</span> and wedge itself into tight crevices to avoid the current and predators.</li>
+                                <li>Provides excellent camouflage against the flat, rocky substrate of the river bottom.</li>
+                            </ul>
+                        </li>
+                        <li><b>Plastron:</b> The plastron (bottom shell) is small, allowing for greater limb movement for gripping rocks and climbing.</li>
+                        <li><b>Algae Growth:</b> Shells often have dense algae growth, further aiding in camouflage.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Key Takeaway -->
+        <section id="slide-5" class="slide-section bg-secondary text-white border border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 border-b border-white/50 pb-2">Slide 5: Key Takeaway: Habitat Isolation and Pollution</h2>
+
+            <div class="p-6 bg-primary rounded-md shadow-2xl space-y-4">
+                <p class="text-xl font-semibold">
+                    <span class="text-accent mr-2">&#9733;</span> <b>Restricted Range:</b> Because it lives only in a very small area of Alabama, any significant local event (like a major pollution spill or dam construction) can wipe out a huge part of the entire global population.
+                </p>
+                <p class="text-xl font-semibold">
+                    <span class="text-accent mr-2">&#9733;</span> <b>Water Quality:</b> It requires high-quality, clean, flowing water. Runoff from agriculture, mining, or sewage pollution is extremely harmful to the turtle and its invertebrate food sources.
+                </p>
+                <p class="text-xl font-semibold">
+                    <span class="text-accent mr-2">&#9733;</span> <b>Conservation Focus:</b> Protection involves monitoring water quality, maintaining natural stream flow, and enforcing regulations to prevent pollution in its small, critical habitat.
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 6: Sources / References -->
+        <section id="slide-6" class="slide-section bg-white border border-gray-200 border-t-4 border-primary">
+            <h2 class="text-3xl font-bold mb-6 text-primary border-b border-gray-300 pb-2">Slide 6: Information Sources</h2>
+            <p class="mb-4 text-lg">Below are the primary sources used for the information in this report.</p>
+            <ul class="space-y-3 slide-list text-base">
+                <li><a href="https://www.fws.gov/species/flattened-musk-turtle-sternotherus-depressus" target="_blank" class="text-blue-700 hover:text-blue-900 underline">U.S. Fish & Wildlife Service: Flattened Musk Turtle Profile</a></li>
+                <li><a href="https://explorer.natureserve.org/Taxon/ELEMENT_GLOBAL.AABPC01010/Sternotherus_depressus" target="_blank" class="text-blue-700 hover:text-blue-900 underline">NatureServe Explorer: Flattened Musk Turtle</a></li>
+                <li><a href="https://www.iucnredlist.org/species/21650/97419131" target="_blank" class="text-blue-700 hover:text-blue-900 underline">IUCN Red List: *Sternotherus depressus*</a></li>
+                <li><a href="https://www.outdooralabama.com/turtles/flattened-musk-turtle" target="_blank" class="text-blue-700 hover:text-blue-900 underline">Outdoor Alabama: Flattened Musk Turtle</a></li>
+            </ul>
+        </section>
+
+
+    </main>
+
+    <footer class="text-center p-4 text-gray-500 text-sm border-t border-gray-300 mt-4">
+        <p>Academic Report for Educational Purposes.</p>
+    </footer>
+
+    <script>
+        // JavaScript for the navigation toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Manual scrolling logic for reliable navigation
+        // We prevent the default anchor jump and manually scroll to ensure consistency.
+        document.querySelectorAll('#navMenu a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // 1. Stop the default link behavior
+                e.preventDefault(); 
+                
+                // 2. Get the target section ID from the href attribute
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    // 3. Use JavaScript to smoothly scroll the target element into view
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+
+                // 4. Close the menu right away
+                document.getElementById('navMenu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
