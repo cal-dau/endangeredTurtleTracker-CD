@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtle Conservation Report Index</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font and project color palette -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Using the Alabama Red-bellied Turtle palette for consistency
+                        'primary': '#1D4A45', // Deep Pine Green (Formal base)
+                        'secondary': '#799896', // Muted Slate Blue (Accent/Water color)
+                        'accent': '#38a3a5', // UPDATED: Teal color for hover highlight
+                        'background-light': '#f9f9f9',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
 
+    <!-- Header / Title -->
+    <header class="bg-primary text-white p-8 text-center shadow-lg rounded-b-xl">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">Endangered Turtle Tracker</h1>
+        <p class="mt-4 text-xl md:text-2xl font-light opacity-90">A collection of academic reports on various turtle conservation species.</p>
+    </header>
+
+    <main class="container mx-auto p-6 md:p-12">
+
+        <h2 class="text-3xl font-bold text-center mb-10 text-primary border-b-2 border-secondary pb-3">Available Species Reports</h2>
+
+        <!-- Report Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+            <!-- Card 1: Kemp's Ridley Sea Turtle (New/Fixed Card) -->
+            <a href="kemps_ridley_website.html" class="card block bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl hover:border-accent flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <h3 class="text-2xl font-extrabold text-primary mb-1">Kemp's Ridley Sea Turtle</h3>
+                    <p class="text-sm italic text-gray-500 mb-4">*Lepidochelys kempii*</p>
+                    
+                    <img src="https://placehold.co/400x200/799896/ffffff?text=Kemps+Ridley+Marine" 
+                         alt="Placeholder image representing a Kemp's Ridley Sea Turtle."
+                         class="w-full h-auto object-cover rounded-md mb-4 shadow-sm">
+
+                    <p class="text-sm text-gray-600">Report on the smallest and most critically endangered sea turtle, known for its unique mass nesting event (arribada).</p>
+                </div>
+                <div class="bg-secondary text-white text-center py-3 rounded-b-lg font-semibold text-lg">
+                    View Report
+                </div>
+            </a>
+
+            <!-- Card 2: Loggerhead Sea Turtle -->
+            <a href="loggerhead_website.html" class="card block bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl hover:border-accent flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <h3 class="text-2xl font-extrabold text-primary mb-1">Loggerhead Sea Turtle</h3>
+                    <p class="text-sm italic text-gray-500 mb-4">*Caretta caretta*</p>
+                    
+                    <img src="https://placehold.co/400x200/B84D35/ffffff?text=Loggerhead+Marine" 
+                         alt="Placeholder image representing a Loggerhead Sea Turtle."
+                         class="w-full h-auto object-cover rounded-md mb-4 shadow-sm">
+
+                    <p class="text-sm text-gray-600">A report focusing on the marine environment, pelagic stage, and major threats to this global sea turtle species.</p>
+                </div>
+                <div class="bg-secondary text-white text-center py-3 rounded-b-lg font-semibold text-lg">
+                    View Report
+                </div>
+            </a>
+
+            <!-- Card 3: Gopher Tortoise -->
+            <a href="gopher_tortoise_website.html" class="card block bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl hover:border-accent flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <h3 class="text-2xl font-extrabold text-primary mb-1">Gopher Tortoise</h3>
+                    <p class="text-sm italic text-gray-500 mb-4">*Gopherus polyphemus*</p>
+                    
+                    <img src="https://placehold.co/400x200/799896/ffffff?text=Gopher+Tortoise+Terrestrial" 
+                         alt="Placeholder image representing a Gopher Tortoise."
+                         class="w-full h-auto object-cover rounded-md mb-4 shadow-sm">
+
+                    <p class="text-sm text-gray-600">Details on this keystone species, its burrow habitat, and conservation efforts in the dry sandhill ecosystems.</p>
+                </div>
+                <div class="bg-secondary text-white text-center py-3 rounded-b-lg font-semibold text-lg">
+                    View Report
+                </div>
+            </a>
+            
+            <!-- Card 4: Flattened Musk Turtle -->
+            <a href="flattened_musk_turtle_website.html" class="card block bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl hover:border-accent flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <h3 class="text-2xl font-extrabold text-primary mb-1">Flattened Musk Turtle</h3>
+                    <p class="text-sm italic text-gray-500 mb-4">*Sternotherus depressus*</p>
+                    
+                    <img src="https://placehold.co/400x200/1D4A45/ffffff?text=Musk+Turtle+Stream" 
+                         alt="Placeholder image representing a Flattened Musk Turtle."
+                         class="w-full h-auto object-cover rounded-md mb-4 shadow-sm">
+
+                    <p class="text-sm text-gray-600">A review of this rare, small stream specialist, its unique shell morphology, and the threat of water quality.</p>
+                </div>
+                <div class="bg-secondary text-white text-center py-3 rounded-b-lg font-semibold text-lg">
+                    View Report
+                </div>
+            </a>
+
+            <!-- Card 5: Alabama Red-bellied Turtle -->
+            <a href="alabama_red_bellied_turtle_website.html" class="card block bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl hover:border-accent flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <h3 class="text-2xl font-extrabold text-primary mb-1">Alabama Red-bellied Turtle</h3>
+                    <p class="text-sm italic text-gray-500 mb-4">*Pseudemys alabamensis*</p>
+                    
+                    <img src="https://placehold.co/400x200/B84D35/ffffff?text=Red-bellied+Turtle+Basking" 
+                         alt="Placeholder image representing an Alabama Red-bellied Turtle."
+                         class="w-full h-auto object-cover rounded-md mb-4 shadow-sm">
+
+                    <p class="text-sm text-gray-600">Information on the State Reptile of Alabama, its endemic range, and vulnerability in the Mobile Bay Delta.</p>
+                </div>
+                <div class="bg-secondary text-white text-center py-3 rounded-b-lg font-semibold text-lg">
+                    View Report
+                </div>
+            </a>
+
+        </div>
+        <!-- End Report Grid -->
+
+        <p class="text-center mt-12 text-lg text-gray-600">Click on any turtle card above to view its detailed conservation report.</p>
+
+    </main>
+
+    <footer class="text-center p-6 text-gray-500 text-sm border-t border-gray-300 mt-12 bg-white">
+        <p>This report collection was compiled for educational and academic use.</p>
+    </footer>
+</body>
+</html>
